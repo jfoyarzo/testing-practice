@@ -1,4 +1,4 @@
-const { stringLength, reverseString, Calculator } = require('./index');
+const { stringLength, reverseString,capitalizeString, Calculator } = require('./index');
 
 // tests for the function 'stringLength'
 
@@ -71,4 +71,10 @@ describe('Calculator class tests', () => {
             expect(Calculator.divide(5, 2)).toBeCloseTo(2.5);
         });
     })
+});
+
+// test for the capitalizeString function
+
+test('Return "Felipe" for "felipe"', () => {
+    expect(capitalizeString('felipe')).toBe('Felipe');
 });

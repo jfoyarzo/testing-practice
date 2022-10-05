@@ -12,6 +12,8 @@ const reverseString = string => {
     return reversed
 }
 
+const capitalizeString = string => string[0].toUpperCase() + string.slice(1);
+
 class Calculator {
     static add = (num1, num2) => num1 + num2;
     static substract = (num1, num2) => num1 - num2;
@@ -19,4 +21,4 @@ class Calculator {
     static divide = (num1, num2) => num1 / num2;
 }
 
-module.exports = { stringLength, reverseString, Calculator };
+module.exports = { stringLength, reverseString, capitalizeString, Calculator };
