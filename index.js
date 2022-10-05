@@ -12,4 +12,11 @@ const reverseString = string => {
     return reversed
 }
 
-module.exports = { stringLength, reverseString };
+class Calculator {
+    static add = (num1, num2) => num1 + num2;
+    static substract = (num1, num2) => num1 - num2;
+    static multiply = (num1, num2) => num1 * num2;
+    static divide = (num1, num2) => num1 / num2;
+}
+
+module.exports = { stringLength, reverseString, Calculator };
